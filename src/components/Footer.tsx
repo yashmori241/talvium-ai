@@ -232,7 +232,7 @@ export const Footer: React.FC = () => {
                       HEADQUARTERS
                     </span>
                     <span className="text-white text-sm font-medium">
-                      Mumbai, India
+                      Ahmedabad, India
                     </span>
                   </div>
                 </div>
