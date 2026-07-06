@@ -56,9 +56,10 @@ export const Footer: React.FC = () => {
     setSubmitError('');
 
     try {
-      await fetch('https://script.google.com/macros/s/AKfycbxHgwL_oogJ714k62HgqInP0h3v5HvVDKqD8o1RspfyYVcegvvjtOfzjYJufb9H6SiJ/exec', {
+      // Replace with your actual form submission endpoint
+      // Example using a generic endpoint:
+      await fetch('https://your-form-handler.com/submit', {
         method: 'POST',
-        mode: 'no-cors',
         headers: {
           'Content-Type': 'application/json',
         },
@@ -68,12 +69,10 @@ export const Footer: React.FC = () => {
           phone: formData.phone,
           business: formData.business,
           message: formData.message,
-          key: "talvium_9x7k2m_secret",
         })
       });
 
-      // Google Apps Script doesn't return CORS headers on no-cors POST.
-      // We assume optimistic success here if the fetch completed without network rejection.
+      // Form submitted successfully
       setIsSubmitted(true);
     } catch (err) {
       setSubmitError('Something went wrong — please email talviumofficial@gmail.com directly instead.');
