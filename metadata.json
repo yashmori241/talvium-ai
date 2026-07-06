@@ -1,0 +1,6 @@
+{
+  "name": "Talvium AI",
+  "description": "Marketing website for Talvium AI - AI automation consultancy for real estate and hospitality businesses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
