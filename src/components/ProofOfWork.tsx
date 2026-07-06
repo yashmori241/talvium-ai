@@ -100,7 +100,7 @@ export const ProofOfWork: React.FC = () => {
                     className="font-heading font-extrabold text-2xl md:text-3xl text-prussian tracking-tight mb-6"
                   >
                     [Insert Your Case Study Title Here]
-                  </h3>
+                  </motion.h3>
 
                   <div className="space-y-5 mb-8">
                     <motion.div
