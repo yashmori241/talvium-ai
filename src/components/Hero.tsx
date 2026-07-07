@@ -37,18 +37,12 @@ export const Hero: React.FC = () => {
 
   // Mock dialogue sequence for the interactive visual panel (sample interaction)
   const conversationLines = [
-    { sender: 'caller', text: "Hi, I'm looking to schedule a viewing for the 3-bedroom unit tomorrow." },
-    { sender: 'agent', text: "Of course. I have an open slot at 11:00 AM or 2:30 PM. Which works best?" },
-    { sender: 'caller', text: "Let's lock in 2:30 PM. Can you text me the location confirmation?" },
-    { sender: 'agent', text: "Done. The address is confirmed and synced. See you tomorrow at 2:30!" }
+    { sender: 'caller', text: "Hi, I'm interested in the 2BHK apartment in Satellite." },
+    { sender: 'agent', text: "Hello! I can help with that. When would you like to schedule a viewing?" },
+    { sender: 'caller', text: "Tomorrow between 3-5 PM works for me." },
+    { sender: 'agent', text: "Perfect! I've booked a viewing for tomorrow at 4 PM. You'll receive a confirmation SMS." }
   ];
 
-  // Stats data
-  const stats = [
-    { value: "98%", label: "Accuracy Rate" },
-    { value: "24/7", label: "Availability" },
-    { value: "100+", label: "Happy Clients" }
-  ];
 
   return (
     <section
@@ -98,7 +92,7 @@ export const Hero: React.FC = () => {
             transition={{ duration: 0.6, ease: 'easeOut' }}
             className="font-heading font-extrabold tracking-tight text-prussian leading-tight text-[clamp(2.5rem,6vw,4rem)] mb-5 text-left"
           >
-            Transform Your Business with <span className="text-royal">AI Automation</span>
+            Automate Your <span className="text-royal">Real Estate</span> & <span className="text-royal">Hospitality</span> Operations
           </motion.h1>
 
           {/* Enhanced supporting sentence with stronger value proposition */}
@@ -108,10 +102,10 @@ export const Hero: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.12, ease: 'easeOut' }}
             className="font-sans font-normal text-denim text-lg md:text-xl leading-relaxed max-w-2xl text-left mb-8"
           >
-            AI voice agents, lead management, and workflow automation that actually work in real estate and hospitality. Built for production, not just demos.
+            We build AI voice agents and automated workflows that handle real calls, qualify actual leads, and free your team to focus on closing deals.
           </motion.p>
 
-          {/* Key benefits as icons with text */}
+          {/* Honest positioning statements */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
@@ -120,21 +114,21 @@ export const Hero: React.FC = () => {
           >
             <div className="flex items-start gap-3">
               <div className="mt-1 text-royal">
-                <Zap size={20} />
+                <Users size={20} />
               </div>
               <div>
-                <h3 className="font-heading font-bold text-prussian text-sm mb-1">Instant ROI</h3>
-                <p className="text-denim text-xs">Reduce operational costs by up to 70%</p>
+                <h3 className="font-heading font-bold text-prussian text-sm mb-1">Founder-Led</h3>
+                <p className="text-denim text-xs">Direct access to the person building your system, not a support queue</p>
               </div>
             </div>
 
             <div className="flex items-start gap-3">
               <div className="mt-1 text-royal">
-                <Users size={20} />
+                <Zap size={20} />
               </div>
               <div>
-                <h3 className="font-heading font-bold text-prussian text-sm mb-1">24/7 Coverage</h3>
-                <p className="text-denim text-xs">Never miss a lead or inquiry again</p>
+                <h3 className="font-heading font-bold text-prussian text-sm mb-1">Founding Client Pricing</h3>
+                <p className="text-denim text-xs">Early partners get direct involvement and better terms than later clients will</p>
               </div>
             </div>
 
@@ -143,8 +137,8 @@ export const Hero: React.FC = () => {
                 <CheckCircle size={20} />
               </div>
               <div>
-                <h3 className="font-heading font-bold text-prussian text-sm mb-1">Production Ready</h3>
-                <p className="text-denim text-xs">Built for reliability and scale</p>
+                <h3 className="font-heading font-bold text-prussian text-sm mb-1">Built in the Open</h3>
+                <p className="text-denim text-xs">Every build documented and shown to you in progress, not revealed only at the end</p>
               </div>
             </div>
           </motion.div>
@@ -172,24 +166,7 @@ export const Hero: React.FC = () => {
             </a>
           </motion.div>
 
-          {/* Stats section for social proof */}
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.42, ease: 'easeOut' }}
-            className="flex flex-wrap gap-8"
-          >
-            {stats.map((stat, index) => (
-              <div key={index} className="flex items-center gap-3">
-                <div className="font-heading font-extrabold text-2xl text-royal">
-                  {stat.value}
-                </div>
-                <div className="text-denim text-sm font-sans">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
-          </motion.div>
+          {/* Removed fabricated stats - keeping honest positioning */}
         </div>
 
         {/* Right column: Enhanced visual demo with floating elements */}

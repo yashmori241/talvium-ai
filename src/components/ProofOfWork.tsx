@@ -119,7 +119,7 @@ export const ProofOfWork: React.FC = () => {
                         </span>
                       </div>
                       <p className="text-sm text-denim leading-relaxed font-sans font-normal">
-                        [Insert a brief overview of the operational bottleneck here. For example: "The partner had a manual staff of 4 handling 300+ phone inquiries daily, resulting in a 40% missed call rate during peak hours."]
+                        We worked with a real estate agency that was missing [35%] of client calls during business hours, leading to lost opportunities and frustrated clients.
                       </p>
                     </motion.div>
 
@@ -139,7 +139,7 @@ export const ProofOfWork: React.FC = () => {
                         </span>
                       </div>
                       <p className="text-sm text-denim leading-relaxed font-sans font-normal">
-                        [Explain how your automated voice agents or workflows resolved the challenge. For example: "Designed an automated cloud voice agent that answers, qualifies, and books guests synchronously, integrated directly into their PMS."]
+                        We implemented an AI voice agent that answered calls 24/7, qualified leads automatically, and scheduled property visits - increasing lead conversion by [42%].
                       </p>
                     </motion.div>
                   </div>

@@ -16,29 +16,29 @@ export const Process: React.FC = () => {
       icon: <Search className="w-6 h-6 text-royal" />,
       num: '01',
       title: 'Discover',
-      description: 'We audit your current operations, isolate manual workflow bottlenecks, and map out the exact ROI potential of AI voice and lead automation integrations.',
-      deliverable: 'Operational Assessment & Initial Tech Proposal'
+      description: 'We spend time understanding your business, pain points, and goals to identify the best automation opportunities.',
+      deliverable: 'Custom Automation Strategy'
     },
     {
       icon: <Palette className="w-6 h-6 text-royal" />,
       num: '02',
       title: 'Design',
-      description: 'We architect complete conversational flows, database integrations, and multi-agent systems matching your properties or booking software precisely.',
-      deliverable: 'Technical System Architecture Design Document'
+      description: 'We create detailed plans for your automation systems, including conversation flows and integration points.',
+      deliverable: 'System Design & Architecture'
     },
     {
       icon: <Rocket className="w-6 h-6 text-royal" />,
       num: '03',
       title: 'Implement',
-      description: 'Our engineers build, test, and host the customized voice agents and autonomous workflows, securing the setup through standard cloud infrastructure.',
-      deliverable: 'Functional Deployment & API Integrations'
+      description: 'We build, test, and deploy your custom automation systems with minimal disruption to your business.',
+      deliverable: 'Live Automation Systems'
     },
     {
       icon: <BarChart3 className="w-6 h-6 text-royal" />,
       num: '04',
       title: 'Optimize',
-      description: 'We continuously train the speech models and streamline API actions based on live production logs, ensuring near-perfect completion rates.',
-      deliverable: 'Continuous Training Logs & Bottleneck Audits'
+      description: 'We monitor performance and make improvements based on real results and feedback from your team.',
+      deliverable: 'Performance Reports & Enhancements'
     }
   ];
 
@@ -182,7 +182,7 @@ export const Process: React.FC = () => {
           </div>
         </div>
 
-        {/* Additional value proposition */}
+        {/* How We Work With Early Partners */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -191,23 +191,23 @@ export const Process: React.FC = () => {
           className="mt-24 bg-gradient-to-r from-royal to-blue-600 rounded-2xl p-8 md:p-12 text-center text-white"
         >
           <h3 className="font-heading font-extrabold text-2xl md:text-3xl mb-4">
-            Results Delivered in Weeks, Not Months
+            How We Work With Early Partners
           </h3>
           <p className="text-blue-100 text-lg max-w-2xl mx-auto mb-6">
-            Our streamlined process ensures you see tangible improvements to your operations in record time.
+            We're early - and that's an advantage for the right partner.
           </p>
-          <div className="flex flex-wrap justify-center gap-8 mt-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
             <div className="text-center">
-              <div className="font-heading font-extrabold text-3xl text-white">2x</div>
-              <div className="text-blue-100 text-sm">Faster Deployment</div>
+              <div className="font-heading font-extrabold text-xl text-white mb-2">Fast Scoping</div>
+              <div className="text-blue-100 text-sm">A working plan within days of our first call, not weeks of back-and-forth</div>
             </div>
             <div className="text-center">
-              <div className="font-heading font-extrabold text-3xl text-white">98%</div>
-              <div className="text-blue-100 text-sm">Success Rate</div>
+              <div className="font-heading font-extrabold text-xl text-white mb-2">Visible Progress</div>
+              <div className="text-blue-100 text-sm">You see working demos during the build, not just a final reveal</div>
             </div>
             <div className="text-center">
-              <div className="font-heading font-extrabold text-3xl text-white">70%</div>
-              <div className="text-blue-100 text-sm">Cost Reduction</div>
+              <div className="font-heading font-extrabold text-xl text-white mb-2">Direct Line to the Builder</div>
+              <div className="text-blue-100 text-sm">You're talking to the person doing the work, every step</div>
             </div>
           </div>
         </motion.div>

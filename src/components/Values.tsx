@@ -14,31 +14,31 @@ export const Values: React.FC = () => {
     {
       icon: Lightbulb,
       title: 'Innovation',
-      description: 'We continuously prototype on the cutting edge of language and voice models, filtering out hype to build what actually creates bottom-line leverage.',
+      description: 'We stay current with AI advances and apply only what works for your business - no experimental solutions.',
       gridClass: 'lg:col-span-7 md:col-span-6'
     },
     {
       icon: ShieldCheck,
       title: 'Reliability',
-      description: 'Our software is built defensively. We monitor uptime, handle API failures gracefully, and design with redundant fallback mechanisms.',
+      description: 'Your systems need to work when you do. We build for uptime and have your back when issues arise.',
       gridClass: 'lg:col-span-5 md:col-span-6'
     },
     {
       icon: Eye,
       title: 'Transparency',
-      description: 'We communicate technical limitations as openly as capabilities. If a process cannot be reliably automated, we tell you immediately.',
+      description: 'We explain what we\'re building, why, and what to expect - no technical jargon or hidden surprises.',
       gridClass: 'lg:col-span-4 md:col-span-6'
     },
     {
       icon: Sparkles,
       title: 'Simplicity',
-      description: 'We believe clean code and simple integrations are the most robust. We build lightweight interfaces that do exactly what is required and no more.',
+      description: 'We keep things simple. If it doesn\'t help your business, we don\'t build it.',
       gridClass: 'lg:col-span-4 md:col-span-6'
     },
     {
       icon: Handshake,
       title: 'Long-term Partnership',
-      description: 'We do not build-and-forget. We maintain deep, long-term relationships to keep your custom models fully aligned with your business processes.',
+      description: 'We\'re in this for the long haul. Your success is our success, and we\'re here to support you as you grow.',
       gridClass: 'lg:col-span-4 md:col-span-12'
     }
   ];

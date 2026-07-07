@@ -16,11 +16,11 @@ export const Services: React.FC = () => {
     {
       icon: <Zap className="w-10 h-10 text-royal" />,
       title: 'AI Voice Agents',
-      description: 'Fully conversational voice systems deployed on reliable cloud telephony lines, talking to guests and clients naturally while booking sessions directly into your CRM.',
+      description: 'Intelligent phone systems that answer calls, qualify leads, and schedule property visits - just like having an extra sales team member working 24/7.',
       deliverables: [
-        'Natural speech processing in US & Indian accents',
-        'Direct synchronization with property management (PMS) & CRM databases',
-        '24/7 autonomous booking and inquiry dispatching'
+        'Answer calls and qualify leads automatically',
+        'Schedule property visits directly in your calendar',
+        'Send SMS confirmations to clients instantly'
       ],
       gridClass: 'lg:col-span-12 md:col-span-2 p-10 md:p-12 border-2 border-prussian/10 shadow-xl relative overflow-hidden bg-gradient-to-br from-white to-blue-50/30',
       isFeatured: true
@@ -28,33 +28,33 @@ export const Services: React.FC = () => {
     {
       icon: <Target className="w-8 h-8 text-royal" />,
       title: 'AI Lead Management',
-      description: 'End-to-end autonomous lead qualification pipelines that ingest inquiries from all major real estate portals and hospitality reservation channels.',
+      description: 'Automatically capture, qualify, and distribute leads from all your sources - so no potential client ever falls through the cracks.',
       deliverables: [
-        'Multi-channel lead ingestion (email, portal, WhatsApp)',
-        'Automated profiling to filter and rank serious buyers or guests',
-        'Instant agent assignment and priority dispatching'
+        'Capture leads from all your marketing channels',
+        'Score and prioritize leads based on interest level',
+        'Assign hot leads to your team instantly'
       ],
       gridClass: 'lg:col-span-4 md:col-span-1 border border-gray-200 p-8 md:p-10 hover:shadow-lg transition-all duration-300'
     },
     {
       icon: <Workflow className="w-8 h-8 text-royal" />,
       title: 'Agentic Workflow Automation',
-      description: 'Intelligent multi-agent systems designed to coordinate complex multi-step background operations, completely replacing manual administrative task loads.',
+      description: 'Automate repetitive tasks like follow-up emails, data entry, and report generation - so your team can focus on closing deals.',
       deliverables: [
-        'Coordinated digital assistants that handle multi-step back-office jobs safely',
-        'Custom document ingestion and automated generation',
-        'Seamless connections between your new tools and your current software'
+        'Automate follow-up emails and client communications',
+        'Generate reports and update CRM automatically',
+        'Sync data between your tools seamlessly'
       ],
       gridClass: 'lg:col-span-4 md:col-span-1 border border-gray-200 p-8 md:p-10 hover:shadow-lg transition-all duration-300'
     },
     {
       icon: <Search className="w-8 h-8 text-royal" />,
       title: 'AI Consulting & Auditing',
-      description: 'Technical assessment of existing operations, custom feasibility blueprints, and clean infrastructure designs to map out high-return automation paths.',
+      description: 'Get a clear roadmap of which processes to automate first, based on your specific business needs and potential ROI.',
       deliverables: [
-        'Detailed reports identifying manual workflow bottlenecks',
-        'Custom technical integration blueprints',
-        'Full security and privacy checks to protect buyer & guest data'
+        'Identify high-impact automation opportunities',
+        'Create a customized implementation plan',
+        'Ensure data security and compliance'
       ],
       gridClass: 'lg:col-span-4 md:col-span-2 lg:col-span-4 border border-gray-200 p-8 md:p-10 hover:shadow-lg transition-all duration-300'
     }
