@@ -55,13 +55,22 @@ export const Footer: React.FC = () => {
     setIsLoading(true);
     setSubmitError('');
 
+    const formUrl = import.meta.env.VITE_FORM_URL;
+    const formKey = import.meta.env.VITE_FORM_KEY;
+
+    if (!formUrl) {
+      console.error('Form submit error: VITE_FORM_URL is not configured');
+      setSubmitError('Something went wrong — please email talviumofficial@gmail.com directly instead.');
+      setIsLoading(false);
+      return;
+    }
+
     try {
-      // Replace with your actual form submission endpoint
-      // Example using a generic endpoint:
-      await fetch('https://your-form-handler.com/submit', {
+      await fetch(formUrl, {
         method: 'POST',
+        mode: 'no-cors',
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'text/plain;charset=utf-8',
         },
         body: JSON.stringify({
           name: formData.name,
@@ -69,12 +78,15 @@ export const Footer: React.FC = () => {
           phone: formData.phone,
           business: formData.business,
           message: formData.message,
+          key: formKey,
         })
       });
 
-      // Form submitted successfully
+      // Google Apps Script doesn't return CORS headers on no-cors POST.
+      // Assume success if fetch completed without network rejection.
       setIsSubmitted(true);
     } catch (err) {
+      console.error('Form submit error:', err);
       setSubmitError('Something went wrong — please email talviumofficial@gmail.com directly instead.');
     } finally {
       setIsLoading(false);
